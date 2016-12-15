@@ -2,8 +2,9 @@
 
 Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple's pure auto layout.
 
+<!---->
+<!--[![CI Status](http://img.shields.io/travis/Gürhan Yerlikaya/ScrollableStackView.svg?style=flat)](https://travis-ci.org/Gürhan Yerlikaya/ScrollableStackView)-->
 
-#[![CI Status](http://img.shields.io/travis/Gürhan Yerlikaya/ScrollableStackView.svg?style=flat)](https://travis-ci.org/Gürhan Yerlikaya/ScrollableStackView)
 #[![Version](https://img.shields.io/cocoapods/v/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
 #[![License](https://img.shields.io/cocoapods/l/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
 #[![Platform](https://img.shields.io/cocoapods/p/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
