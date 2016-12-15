@@ -12,6 +12,7 @@ Scroll your stack view with a smile up on your face. Written in Swift 3. Used Ap
 
 ### TODO
 
+- [ ] add Storyboard in example project
 - [ ] try NSLayoutAnchor style (requires iOS 9 and later)
 - [ ] Carthage
 - [ ] Swift Package Manager
