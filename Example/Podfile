@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ScrollableStackView_Example' do
+  pod 'ScrollableStackView', :path => '../'
+
+  target 'ScrollableStackView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
