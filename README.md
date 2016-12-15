@@ -26,4 +26,4 @@ Gürhan Yerlikaya, gurhanyerlikaya@gmail.com
 
 ## License
 
-ScrollableStackView is available under the MIT license. See the LICENSE file for more info.
+ScrollableStackView is available under the MIT license. See the [`LICENSE`](LICENSE) file for more info.
