@@ -13,12 +13,12 @@ Scroll your stack view with a smile up on your face. Written in Swift 3. Used Ap
 ### TODO
 
 - [ ] try NSLayoutAnchor style (requires iOS 9 and later)
-- [ ] Cocoapods
 - [ ] Carthage
 - [ ] Swift Package Manager
 
 ## Example
 
+Cocoapods
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Wish List 
