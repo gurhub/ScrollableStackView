@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ScrollableStackView: UIStackView {
+public class ScrollableStackView: UIStackView {
     
     fileprivate var didSetupConstraints = false
     fileprivate var scrollView: UIScrollView!
     open var stackView: UIStackView!
     
-    override func didMoveToSuperview() {
+    override public func didMoveToSuperview() {
         super.didMoveToSuperview()
         
         setupUI()
@@ -76,7 +76,7 @@ class ScrollableStackView: UIStackView {
     }
     
     // Auto Layout
-    override func updateConstraints() {
+    override public func updateConstraints() {
         super.updateConstraints()
         
         if (!didSetupConstraints) {

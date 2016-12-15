@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		2C2D48DCBFF5111A459D32706DD5F7F9 /* Pods-ScrollableStackView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16785C2D206A794C54B2C07F943CD069 /* Pods-ScrollableStackView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CDB1BF3F5A6D65CA5ED303CAE8DD7E1 /* Pods-ScrollableStackView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B437570AEB0C6149E14F2E38980EB7 /* Pods-ScrollableStackView_Tests-dummy.m */; };
+		3F19A9810A503BD00410D3D2AE530A3A /* ScrollableStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F6A8418B109C7D551B0AAE0D77385 /* ScrollableStackView.swift */; };
 		450F7C6EFAF210201B7DF5009205C809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		5D2A85E8503E207944A672E03F7E27A6 /* Pods-ScrollableStackView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1AE3BE69EBEFB2E818400656C5F645B /* Pods-ScrollableStackView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		603335C3076F78DA9BD5786D966CC705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		813D4FFB7EB3CC2B9DCFF842F1686589 /* ScrollableStackView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69059828B77382DE7B5B61AD1D42A44C /* ScrollableStackView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A08F6EE3E7F4953E5CB339095B3D9D00 /* ScrollableStackView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3DD18FE29E312CD40F2731B396EB0 /* ScrollableStackView-dummy.m */; };
+		941F7EB2D248D2994F8BAFB63AD8B6CD /* ScrollableStackView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3DD18FE29E312CD40F2731B396EB0 /* ScrollableStackView-dummy.m */; };
 		B4594BFB15CB745D6D24C9BBBB002B38 /* Pods-ScrollableStackView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB415CB86F373A2B2893F9AF825A94B9 /* Pods-ScrollableStackView_Example-dummy.m */; };
 		C7C3CD98FB897EC23448A8DC8668123B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		D8C6A43E35FB2E3D0373D5E7A7A8B960 /* ScrollableStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D7DC63FA9C7868C4E87E974494284 /* ScrollableStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,31 +35,31 @@
 		11A7ECAF41AC00024DF465996A68B6D8 /* Pods-ScrollableStackView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollableStackView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		16785C2D206A794C54B2C07F943CD069 /* Pods-ScrollableStackView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollableStackView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		17241E15B0752EA5507BC9860DB58210 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		193419063A422AD51C371CD9FFD0B5CC /* ScrollableStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScrollableStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ABCE1BDA153C2953C5E5837A903EE89 /* ScrollableStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ScrollableStackView.modulemap; sourceTree = "<group>"; };
+		193419063A422AD51C371CD9FFD0B5CC /* ScrollableStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollableStackView.framework; path = ScrollableStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ABCE1BDA153C2953C5E5837A903EE89 /* ScrollableStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ScrollableStackView.modulemap; sourceTree = "<group>"; };
 		2A3D55062D6751A3CD3645423E6A0D1A /* Pods-ScrollableStackView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollableStackView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2CD0F0547DF1A040E3D5E469314E60C4 /* Pods_ScrollableStackView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollableStackView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD0F0547DF1A040E3D5E469314E60C4 /* Pods_ScrollableStackView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScrollableStackView_Example.framework; path = "Pods-ScrollableStackView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C67BED8417FBC2AF82628B19B96BE4 /* Pods-ScrollableStackView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollableStackView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3E5FC6282769A4438D5BE61B56633545 /* ScrollableStackView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableStackView-prefix.pch"; sourceTree = "<group>"; };
 		47D4C3FBC62E5F3AB1E0E6ACA821FB3D /* ScrollableStackView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollableStackView.xcconfig; sourceTree = "<group>"; };
-		4D09BB24A07E07EEF09AC811D19FF4F2 /* Pods-ScrollableStackView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScrollableStackView_Tests.modulemap"; sourceTree = "<group>"; };
+		4D09BB24A07E07EEF09AC811D19FF4F2 /* Pods-ScrollableStackView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScrollableStackView_Tests.modulemap"; sourceTree = "<group>"; };
 		54331502A8D77AD033FA1C850BA9D559 /* Pods-ScrollableStackView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollableStackView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		57B437570AEB0C6149E14F2E38980EB7 /* Pods-ScrollableStackView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollableStackView_Tests-dummy.m"; sourceTree = "<group>"; };
-		593A52280DB5FA927A5B3DC134CE45A7 /* Pods-ScrollableStackView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScrollableStackView_Example.modulemap"; sourceTree = "<group>"; };
+		593A52280DB5FA927A5B3DC134CE45A7 /* Pods-ScrollableStackView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScrollableStackView_Example.modulemap"; sourceTree = "<group>"; };
 		5A638C6DD5E01315059B56C579B42B5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9D3BB85F1CC31D77B4E89051C05B1D /* Pods-ScrollableStackView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollableStackView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		69059828B77382DE7B5B61AD1D42A44C /* ScrollableStackView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollableStackView-umbrella.h"; sourceTree = "<group>"; };
 		718383B8E1A0AB5F6F9B712421C0758E /* Pods-ScrollableStackView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollableStackView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		76F8E0B86F690DA003E3CF7BB35F62E1 /* Pods-ScrollableStackView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollableStackView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8BB3DD18FE29E312CD40F2731B396EB0 /* ScrollableStackView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollableStackView-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B17EFA138DE465488A43C1133A8CBB05 /* Pods_ScrollableStackView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollableStackView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B17EFA138DE465488A43C1133A8CBB05 /* Pods_ScrollableStackView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScrollableStackView_Tests.framework; path = "Pods-ScrollableStackView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FA61723C03A6619CE663A498CC582C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D60CA64E989908E934FC0D0423E2F2 /* Pods-ScrollableStackView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollableStackView_Example-resources.sh"; sourceTree = "<group>"; };
 		CB415CB86F373A2B2893F9AF825A94B9 /* Pods-ScrollableStackView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollableStackView_Example-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC9F6A8418B109C7D551B0AAE0D77385 /* ScrollableStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScrollableStackView.swift; sourceTree = "<group>"; };
 		CDD28A41C6436B884CE1BCCE4F3E5C7B /* Pods-ScrollableStackView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollableStackView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D97D7DC63FA9C7868C4E87E974494284 /* ScrollableStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScrollableStackView.swift; sourceTree = "<group>"; };
 		E1AE3BE69EBEFB2E818400656C5F645B /* Pods-ScrollableStackView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollableStackView_Example-umbrella.h"; sourceTree = "<group>"; };
 		E7DD78DB4A2B4291D94A15777E00D467 /* Pods-ScrollableStackView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollableStackView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +106,15 @@
 			path = "Example/Pods/Target Support Files/ScrollableStackView";
 			sourceTree = "<group>";
 		};
+		2D2BDB44427A715E28609057BCFAEB4C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F6A8418B109C7D551B0AAE0D77385 /* ScrollableStackView.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		447A35C0046161E80D32E182A3C7A178 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,14 +150,6 @@
 				59691B6E4A14EF2953793A5535A03B4A /* Products */,
 				BFE694EE17940302C687728641DD74E9 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		82F4A09961050C6F8662AC89AF51DEC6 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D97D7DC63FA9C7868C4E87E974494284 /* ScrollableStackView.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		98ECF7314CFB3ACAD52676157592FD88 /* Pods-ScrollableStackView_Example */ = {
@@ -199,8 +200,9 @@
 		E770816F374A2ED0A0E1542595CEF2FB /* ScrollableStackView */ = {
 			isa = PBXGroup;
 			children = (
-				82F4A09961050C6F8662AC89AF51DEC6 /* Classes */,
+				2D2BDB44427A715E28609057BCFAEB4C /* Classes */,
 			);
+			name = ScrollableStackView;
 			path = ScrollableStackView;
 			sourceTree = "<group>";
 		};
@@ -273,7 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A327131A057FEC9A9C48AB430A74593 /* Build configuration list for PBXNativeTarget "ScrollableStackView" */;
 			buildPhases = (
-				0A9FFDFF42367446F0A9117F38922B3F /* Sources */,
+				3FA10AA30347E96B331B6A8D371C464F /* Sources */,
 				569761EFB62639AC295375DB788C70FE /* Frameworks */,
 				5B29C15F3A4034636BB1634A3FFDBADA /* Headers */,
 			);
@@ -341,12 +343,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A9FFDFF42367446F0A9117F38922B3F /* Sources */ = {
+		3FA10AA30347E96B331B6A8D371C464F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08F6EE3E7F4953E5CB339095B3D9D00 /* ScrollableStackView-dummy.m in Sources */,
-				D8C6A43E35FB2E3D0373D5E7A7A8B960 /* ScrollableStackView.swift in Sources */,
+				941F7EB2D248D2994F8BAFB63AD8B6CD /* ScrollableStackView-dummy.m in Sources */,
+				3F19A9810A503BD00410D3D2AE530A3A /* ScrollableStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
