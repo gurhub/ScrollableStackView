@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 s.name             = 'ScrollableStackView'
 s.version          = '1.0'
-s.summary          = 'Scroll your stack view with a smile up on your face.'
+s.summary          = 'Scrollable UIStackView. Scroll your stack view with a smile up on your face.'
 s.description      = <<-DESC
 
-Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple's pure auto layout. If you need to use UIStackView with scroll (UIScrollView) this is the right library for you.
+Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple's pure auto layout. If you need to use UIStackView with scroll (UIScrollView) this is the right library for you.
 DESC
 
 s.homepage         = 'https://github.com/gurhub/ScrollableStackView'
