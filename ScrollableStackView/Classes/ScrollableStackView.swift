@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc public class ScrollableStackView: UIStackView {
+@objc public class ScrollableStackView: UIView {
     
     fileprivate var didSetupConstraints = false
     fileprivate var scrollView: UIScrollView!
