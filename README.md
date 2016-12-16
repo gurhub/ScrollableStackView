@@ -19,7 +19,28 @@ Scroll your stack view with a smile up on your face. Written in Swift 3. Used Ap
 ## Example
 
 Cocoapods
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first.   
+
+## Usage
+### Sample Code (Swift)
+
+```swift
+var scrollable = ScrollableStackView(frame: view.frame)
+view.addSubview(scrollable)
+
+// add your views with addArrangedSubview(your_view) 
+let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 55))
+rectangle.backgroundColor = UIColor.red
+scrollable.stackView.addArrangedSubview(rectangle)
+}
+```
+
+### Sample Code (Objective-C)
+
+```objective-c
+
+```
+
 
 ## Wish List 
 
