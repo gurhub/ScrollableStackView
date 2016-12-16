@@ -6,10 +6,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   ScrollableStackView:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  ScrollableStackView: 83e5943c730474246bb6b253391ef78caed1626a
+  ScrollableStackView: 82fe51adf0df6f9ea89f4eff0eed2bac01186da0
 
 PODFILE CHECKSUM: ce2af2a366952d6b9046a4a798b61b3154f78e89
 

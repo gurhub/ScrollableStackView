@@ -8,11 +8,11 @@
 
 import UIKit
 
-public class ScrollableStackView: UIStackView {
+@objc public class ScrollableStackView: UIStackView {
     
     fileprivate var didSetupConstraints = false
     fileprivate var scrollView: UIScrollView!
-    open var stackView: UIStackView!
+    @objc open var stackView: UIStackView!
     
     override public func didMoveToSuperview() {
         super.didMoveToSuperview()
