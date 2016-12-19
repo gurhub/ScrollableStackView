@@ -16,16 +16,13 @@ import UIKit
     @objc open var stackView: UIStackView!
     @objc @IBInspectable open var spacing: CGFloat = 8
     
-    override public func didMoveToSuperview() {
-        super.didMoveToSuperview()
-        
-        setupUI()
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
-    func setupUI() {
-        self.translatesAutoresizingMaskIntoConstraints = false
-        clipsToBounds = true
-        
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+    
         // ScrollView
         scrollView = UIScrollView(frame: self.frame)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -38,6 +35,17 @@ import UIKit
         stackView.spacing = spacing
         stackView.distribution = .equalSpacing
         scrollView.addSubview(stackView)
+    }
+
+    override public func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        
+        setupUI()
+    }
+    
+    func setupUI() {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        clipsToBounds = true
         
         self.setNeedsUpdateConstraints() // Bootstrap auto layout
     }
