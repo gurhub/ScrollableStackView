@@ -52,7 +52,7 @@ import UIKit
     
     func addItemToStack() {
         let random = CGFloat(arc4random_uniform(131) + 30) // between 30-130
-        let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: 42, height: 42))
+        let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: random, height: random))
         rectangle.backgroundColor = UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1.0)
         rectangle.heightAnchor.constraint(equalToConstant: random).isActive = true
         
