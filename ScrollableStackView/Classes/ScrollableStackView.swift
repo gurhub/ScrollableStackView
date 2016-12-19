@@ -8,11 +8,13 @@
 
 import UIKit
 
+@IBDesignable
 @objc public class ScrollableStackView: UIView {
     
     fileprivate var didSetupConstraints = false
     fileprivate var scrollView: UIScrollView!
     @objc open var stackView: UIStackView!
+    @objc @IBInspectable open var spacing: CGFloat = 8
     
     override public func didMoveToSuperview() {
         super.didMoveToSuperview()
@@ -33,7 +35,7 @@ import UIKit
         stackView = UIStackView(frame: scrollView.frame)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
-        stackView.spacing = 8
+        stackView.spacing = spacing
         stackView.distribution = .equalSpacing
         scrollView.addSubview(stackView)
         

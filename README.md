@@ -1,6 +1,6 @@
 # ScrollableStackView
 
-Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple's pure auto layout.
+Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple's pure auto layout
 
 <!---->
 <!--[![CI Status](http://img.shields.io/travis/Gürhan Yerlikaya/ScrollableStackView.svg?style=flat)](https://travis-ci.org/Gürhan Yerlikaya/ScrollableStackView)-->
@@ -11,10 +11,10 @@ Scroll your stack view with a smile up on your face. Written in Swift 3. Used Ap
 
 ### TODO
 
-- [ ] add Storyboard in example project
-- [ ] try NSLayoutAnchor style (requires iOS 9 and later)
-- [ ] Carthage
-- [ ] Swift Package Manager
+- [ ] Add Storyboard in example project  
+- [ ] Try NSLayoutAnchor style (requires iOS 9 and later)
+- [ ] Add Carthage support
+- [ ] Add Swift Package Manager support
 
 ## Example
 
@@ -32,7 +32,6 @@ view.addSubview(scrollable)
 let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 55))
 rectangle.backgroundColor = UIColor.red
 scrollable.stackView.addArrangedSubview(rectangle)
-}
 ```
 
 ### Sample Code (Objective-C)
