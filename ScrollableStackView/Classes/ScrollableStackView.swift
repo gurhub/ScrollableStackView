@@ -15,6 +15,7 @@ import UIKit
     fileprivate var scrollView: UIScrollView!
     @objc open var stackView: UIStackView!
     @objc @IBInspectable open var spacing: CGFloat = 8
+    @objc open var durationForAnimations:TimeInterval = 1.45
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -52,13 +53,31 @@ import UIKit
         self.setNeedsUpdateConstraints() // Bootstrap auto layout
     }
     
-    //MARK: Stack View
+    // Scrolls to item at index
     @objc public func scrollToItem(index: Int) {
         if stackView.arrangedSubviews.count > 0 {
             var view = stackView.arrangedSubviews[index]
             
-            UIView.animate(withDuration: 1.45, animations: {
+            UIView.animate(withDuration: durationForAnimations, animations: {
                 self.scrollView.setContentOffset(CGPoint(x: 0, y:view.frame.origin.y), animated: true)
+            })
+        }
+    }
+    
+    // Used to scroll till the end of scrollview
+    @objc public func scrollToBottom() {
+        if stackView.arrangedSubviews.count > 0 {
+            UIView.animate(withDuration: durationForAnimations, animations: {
+                self.scrollView.scrollToBottom(true)
+            })
+        }
+    }
+    
+    // Scrolls to top of scrollable area
+    @objc public func scrollToTop() {
+        if stackView.arrangedSubviews.count > 0 {
+            UIView.animate(withDuration: durationForAnimations, animations: {
+                self.scrollView.setContentOffset(CGPoint(x: 0, y:0), animated: true)
             })
         }
     }
@@ -109,7 +128,7 @@ import UIKit
     }
 }
 
-// Used to scroll till the end after adding new items to atack view
+// Used to scroll till the end of scrollview
 extension UIScrollView {
     func scrollToBottom(_ animated: Bool) {
         if self.contentSize.height < self.bounds.size.height { return }
