@@ -9,15 +9,32 @@ Scrollable UIStackView. Scroll your stack view with a smile up on your face. Wri
 [![License](https://img.shields.io/cocoapods/l/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
 [![Platform](https://img.shields.io/cocoapods/p/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
 
-## Installation
+## Installation with CocoaPods
 
-ScrollableStackView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+[CocoaPods](http://cocoapods.org) is a dependency manager for both Swift and Objective-C. ScrollableStackView is available through [CocoaPods](http://cocoapods.org). You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+ 
+#### Podfile
+
+To install it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
+
+target 'TargetName' do
 pod "ScrollableStackView"
+end
 ```
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
 ## Usage
 ### Sample Code (Swift)
 
@@ -52,6 +69,9 @@ UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 55)];
 [scrollable.stackView addArrangedSubview:rectangle]; 
 // ...
 ```
+
+
+
 ## Example Project
 
 Cocoapods
@@ -61,9 +81,21 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 <!--## Wish List -->
 <!--## Requirements-->
 
+
+## Communication
+
+If you see a way to improve the project :
+
+- If you **need help**, use [Stack Overflow](http://stackoverflow.com).
+- If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com).
+- If you **found a bug**, _and can provide steps to reliably reproduce it_, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **want to contribute**, submit a pull request. It's better to begin with an issue rather than a pull request, though, because we might disagree whether the proposed change is an actual improvement. :wink:
+
 ### TODO
 
-- [ ] Add Storyboard in example project  
+- [ ] Add Storyboard in example project
+- [ ] Add toolbar for example project (or UITableView)
 - [ ] Try NSLayoutAnchor style (requires iOS 9 and later)
 - [ ] Add Carthage support
 - [ ] Add Swift Package Manager support
