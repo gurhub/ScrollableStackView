@@ -11,7 +11,7 @@ Scrollable UIStackView. Scroll your stack view with a smile up on your face. Wri
 
 ## Installation with CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for both Swift and Objective-C. ScrollableStackView is available through [CocoaPods](http://cocoapods.org). You can install it with the following command:
+[CocoaPods](http://cocoapods.org) is a dependency manager for both Swift and Objective-C. ScrollableStackView is available through CocoaPods. You can install it with the following command:
 
 ```bash
 $ gem install cocoapods
@@ -26,7 +26,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 
 target 'TargetName' do
-pod "ScrollableStackView"
+    pod "ScrollableStackView"
 end
 ```
 Then, run the following command:
@@ -70,12 +70,16 @@ UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 55)];
 // ...
 ```
 
-
-
 ## Example Project
 
 Cocoapods
-To run the example project, clone the repo, and run `pod install` from the Example directory first.    
+To run the example project, clone the repo, and run 
+
+```bash
+$ pod install
+``` 
+
+from the Example directory first.    
 
 <!--## Code Snippets-->
 <!--## Wish List -->
@@ -91,6 +95,12 @@ If you see a way to improve the project :
 - If you **found a bug**, _and can provide steps to reliably reproduce it_, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request. It's better to begin with an issue rather than a pull request, though, because we might disagree whether the proposed change is an actual improvement. :wink:
+
+Thanks! :v:
+
+[issue]: https://github.com/gurhub/ScrollableStackView/issues
+[pull request]: https://github.com/gurhub/ScrollableStackView/pulls
+[GitHub Swift Style Guide]: https://github.com/github/swift-style-guide
 
 ### TODO
 
