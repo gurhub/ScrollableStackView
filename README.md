@@ -28,22 +28,33 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 var scrollable = ScrollableStackView(frame: view.frame)
 view.addSubview(scrollable)
 
-// add your views with addArrangedSubview(your_view) 
+// add your views with 
 let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 55))
-rectangle.backgroundColor = UIColor.red
+rectangle.backgroundColor = UIColor.blue
 scrollable.stackView.addArrangedSubview(rectangle)
+// ...
 ```
 
 ### Sample Code (Objective-C)
 
 ```objective-c
+ScrollableStackView *scrollable = [[ScrollableStackView alloc] initWithFrame:self.view.frame];
+scrollable.stackView.distribution = UIStackViewDistributionFillProportionally;
+scrollable.stackView.alignment = UIStackViewAlignmentCenter;
+scrollable.stackView.axis = UILayoutConstraintAxisVertical;
+[self.view addSubview:scrollable];
 
+UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 55)];
+[rectangle setBackgroundColor:[UIColor blueColor]];
+
+// add your views with
+[scrollable.stackView addArrangedSubview:rectangle]; 
+// ...
 ```
 
-
-## Wish List 
-
-## Requirements
+<!--## Code Snippets-->
+<!--## Wish List -->
+<!--## Requirements-->
 
 ## Installation
 
@@ -51,6 +62,7 @@ ScrollableStackView is available through [CocoaPods](http://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```ruby
+platform :ios, '9.0'
 pod "ScrollableStackView"
 ```
 
