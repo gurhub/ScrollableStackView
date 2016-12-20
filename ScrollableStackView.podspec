@@ -4,7 +4,7 @@ s.version          = '1.0.1'
 s.summary          = 'Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple s pure auto layout.'
 s.description      = <<-DESC
 
-Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple s pure auto layout. If you need to use UIStackView scrollable (like UIScrollView) this is the right library for you. Also supports for Objective-C too!
+Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple s pure auto layout. If you need to use UIStackView scrollable (like UIScrollView) this is the right library for you. Objective-C and Swift compatible!
 
 DESC
 
