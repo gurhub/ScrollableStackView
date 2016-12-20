@@ -1,8 +1,8 @@
 {
   "name": "ScrollableStackView",
-  "version": "1.0",
+  "version": "1.0.1",
   "summary": "Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple s pure auto layout.",
-  "description": "Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple's pure auto layout. If you need to use UIStackView with scroll (UIScrollView) this is the right library for you.",
+  "description": "Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple s pure auto layout. If you need to use UIStackView scrollable (like UIScrollView) this is the right library for you. Objective-C and Swift compatible!",
   "homepage": "https://github.com/gurhub/ScrollableStackView",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gurhub/ScrollableStackView.git",
-    "tag": "1.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "9.0"

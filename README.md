@@ -9,22 +9,21 @@ Scrollable UIStackView. Scroll your stack view with a smile up on your face. Wri
 [![License](https://img.shields.io/cocoapods/l/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
 [![Platform](https://img.shields.io/cocoapods/p/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
 
-### TODO
+## Installation
 
-- [ ] Add Storyboard in example project  
-- [ ] Try NSLayoutAnchor style (requires iOS 9 and later)
-- [ ] Add Carthage support
-- [ ] Add Swift Package Manager support
+ScrollableStackView is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-## Example
-
-Cocoapods
-To run the example project, clone the repo, and run `pod install` from the Example directory first.   
-
+```ruby
+platform :ios, '9.0'
+pod "ScrollableStackView"
+```
 ## Usage
 ### Sample Code (Swift)
 
 ```swift
+import ScrollableStackView
+
 var scrollable = ScrollableStackView(frame: view.frame)
 view.addSubview(scrollable)
 
@@ -38,6 +37,8 @@ scrollable.stackView.addArrangedSubview(rectangle)
 ### Sample Code (Objective-C)
 
 ```objective-c
+@import ScrollableStackView
+
 ScrollableStackView *scrollable = [[ScrollableStackView alloc] initWithFrame:self.view.frame];
 scrollable.stackView.distribution = UIStackViewDistributionFillProportionally;
 scrollable.stackView.alignment = UIStackViewAlignmentCenter;
@@ -51,20 +52,21 @@ UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 55)];
 [scrollable.stackView addArrangedSubview:rectangle]; 
 // ...
 ```
+## Example Project
+
+Cocoapods
+To run the example project, clone the repo, and run `pod install` from the Example directory first.    
 
 <!--## Code Snippets-->
 <!--## Wish List -->
 <!--## Requirements-->
 
-## Installation
+### TODO
 
-ScrollableStackView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-platform :ios, '9.0'
-pod "ScrollableStackView"
-```
+- [ ] Add Storyboard in example project  
+- [ ] Try NSLayoutAnchor style (requires iOS 9 and later)
+- [ ] Add Carthage support
+- [ ] Add Swift Package Manager support
 
 ## Author
 

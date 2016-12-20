@@ -1,15 +1,15 @@
 PODS:
-  - ScrollableStackView (1.0)
+  - ScrollableStackView (1.0.1)
 
 DEPENDENCIES:
   - ScrollableStackView (from `../`)
 
 EXTERNAL SOURCES:
   ScrollableStackView:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ScrollableStackView: 82fe51adf0df6f9ea89f4eff0eed2bac01186da0
+  ScrollableStackView: 3c5d4ec63d442eb757edf6aba5cbed55197c70c6
 
 PODFILE CHECKSUM: ce2af2a366952d6b9046a4a798b61b3154f78e89
 

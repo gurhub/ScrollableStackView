@@ -37,17 +37,30 @@ import UIKit
         scrollView.addSubview(stackView)
     }
 
+    //MARK: View life cycle
     override public func didMoveToSuperview() {
         super.didMoveToSuperview()
         
         setupUI()
     }
     
+    //MARK: UI
     func setupUI() {
         self.translatesAutoresizingMaskIntoConstraints = false
         clipsToBounds = true
         
         self.setNeedsUpdateConstraints() // Bootstrap auto layout
+    }
+    
+    //MARK: Stack View
+    @objc public func scrollToItem(index: Int) {
+        if stackView.arrangedSubviews.count > 0 {
+            var view = stackView.arrangedSubviews[index]
+            
+            UIView.animate(withDuration: 1.45, animations: {
+                self.scrollView.setContentOffset(CGPoint(x: 0, y:view.frame.origin.y), animated: true)
+            })
+        }
     }
     
     func addItemToStack() {

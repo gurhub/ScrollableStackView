@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         scrollable.stackView.axis = .vertical
         view.addSubview(scrollable)
         
-        for _ in 1 ..< 11 {
+        for _ in 1 ..< 23 {
             let min:UInt32 = 30
             let max:UInt32 = 400
             let random = CGFloat(arc4random_uniform(max - min) + min) // between 30-130
@@ -42,6 +42,12 @@ class ViewController: UIViewController {
         scrollable.stackView.addArrangedSubview(label)
                 
         view.setNeedsUpdateConstraints()
+        
+        self.perform(#selector(jumpToView), with: nil, afterDelay: 3.0)
+    }
+    
+    func jumpToView() {
+        scrollable.scrollToItem(index: 11)
     }
     
     override func updateViewConstraints() {
