@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  VerticalLayoutViewController.swift
 //  ScrollableStackView
 //
-//  Created by Gürhan Yerlikaya on 12/15/2016.
-//  Copyright (c) 2016 Gürhan Yerlikaya. All rights reserved.
+//  Created by G on 23/12/2016.
+//  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
 import UIKit
 import ScrollableStackView
 
-class ViewController: UIViewController {
+class VerticalLayoutViewController: UIViewController {
 
     var didSetupConstraints = false
     var scrollable: ScrollableStackView!
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         label.sizeToFit()
         scrollable.stackView.addArrangedSubview(label)
-                
+        
         view.setNeedsUpdateConstraints()
         
         self.perform(#selector(jumpToView), with: nil, afterDelay: 3.0)
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
             
             didSetupConstraints = true
         }
-
+        
         super.updateViewConstraints()
     }
     
