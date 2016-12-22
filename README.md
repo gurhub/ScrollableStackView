@@ -108,7 +108,6 @@ Thanks! :v:
 
 - [ ] Add Storyboard in example project
 - [ ] Add toolbar for example project (or UITableView)
-- [ ] Try NSLayoutAnchor style (requires iOS 9 and later)
 - [ ] Add Carthage support
 - [ ] Add Swift Package Manager support
 
