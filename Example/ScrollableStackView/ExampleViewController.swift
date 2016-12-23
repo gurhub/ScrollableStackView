@@ -37,7 +37,7 @@ class ExampleViewController: UITableViewController {
         if indexPath.row == 0 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "VerticalLayoutViewController") as! VerticalLayoutViewController
-            self.present(controller, animated: true, completion: nil)
+            self.navigationController?.pushViewController(controller, animated: true)
         }
             //        } else if indexPath.row == 1 {
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
