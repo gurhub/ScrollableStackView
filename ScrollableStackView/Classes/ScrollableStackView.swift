@@ -56,7 +56,7 @@ import UIKit
     // Scrolls to item at index
     @objc public func scrollToItem(index: Int) {
         if stackView.arrangedSubviews.count > 0 {
-            var view = stackView.arrangedSubviews[index]
+            let view = stackView.arrangedSubviews[index]
             
             UIView.animate(withDuration: durationForAnimations, animations: {
                 self.scrollView.setContentOffset(CGPoint(x: 0, y:view.frame.origin.y), animated: true)
