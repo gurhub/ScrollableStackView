@@ -12,7 +12,7 @@ import UIKit
 @objc public class ScrollableStackView: UIView {
     
     fileprivate var didSetupConstraints = false
-    fileprivate var scrollView: UIScrollView!
+    public private(set) var scrollView: UIScrollView!
     @objc open var stackView: UIStackView!
     @objc @IBInspectable open var spacing: CGFloat = 8
     @objc open var durationForAnimations:TimeInterval = 1.45
