@@ -35,9 +35,9 @@ Then, run the following command:
 $ pod install
 ```
 
-##### Test Drive | Try before install
+#### Test Drive | Try Now 🚀
 
-You can try library before you add it to your project 🎯
+You can try library before you add it to your project 🎯 Give it a try:    
 
 ```bash
 $ pod try ScrollableStackView
