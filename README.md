@@ -16,7 +16,7 @@ Scrollable UIStackView. Scroll your stack view with a smile up on your face. Wri
 ```bash
 $ gem install cocoapods
 ```
- 
+
 #### Podfile
 
 To install it, simply add the following line to your Podfile:
@@ -35,6 +35,16 @@ Then, run the following command:
 $ pod install
 ```
 
+##### Test Drive | Try before install
+
+You can try library before you add it to your project 🎯
+
+```bash
+$ pod try ScrollableStackView
+```
+
+Pod try is a wonderful subcommand which allows you to quickly launch the demo project of a Pod. It can be used to assess the quality of a library – very useful for user interface elements – or to quickly get up to speed on how to use it.
+
 ## Usage
 ### Sample Code (Swift)
 
@@ -44,7 +54,7 @@ import ScrollableStackView
 var scrollable = ScrollableStackView(frame: view.frame)
 view.addSubview(scrollable)
 
-// add your views with 
+// add your views with
 let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 55))
 rectangle.backgroundColor = UIColor.blue
 scrollable.stackView.addArrangedSubview(rectangle)
@@ -66,18 +76,18 @@ UIView *rectangle = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 55)];
 [rectangle setBackgroundColor:[UIColor blueColor]];
 
 // add your views with
-[scrollable.stackView addArrangedSubview:rectangle]; 
+[scrollable.stackView addArrangedSubview:rectangle];
 // ...
 ```
 
 ## Example Project
 
 Cocoapods
-To run the example project, clone the repo, and run 
+To run the example project, clone the repo, and run
 
 ```bash
 $ pod install
-``` 
+```
 
 from the Example directory first.    
 
