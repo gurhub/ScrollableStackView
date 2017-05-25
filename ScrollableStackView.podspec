@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'ScrollableStackView'
-s.version          = '1.0.2'
+s.version          = '1.0.3'
 s.summary          = 'Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple s pure auto layout.'
 s.description      = <<-DESC
 
