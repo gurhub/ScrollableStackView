@@ -100,7 +100,7 @@ from the Example directory first.
 
 If you see a way to improve the project :
 
-If you **need help**, use [Stack Overflow](https://stackoverflow.com/questions/tagged/scrollablestackview). (Tag `scrollablestackview`)
+- If you **need help**, use [Stack Overflow](https://stackoverflow.com/questions/tagged/scrollablestackview). (Tag `scrollablestackview`)
 - If you'd like to **ask a general question**, use [Stack Overflow](https://stackoverflow.com/questions/tagged/scrollablestackview).
 - If you **found a bug**, _and can provide steps to reliably reproduce it_, open an [issue][].
 - If you **have a feature request**, open an [issue][].
