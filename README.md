@@ -3,7 +3,7 @@
 Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple's pure auto layout. If you need to use UIStackView scrollable (like UIScrollView) this is the right library for you. Objective-C and Swift compatible.
 
 <!---->
-<!--[![CI Status](http://img.shields.io/travis/Gürhan Yerlikaya/ScrollableStackView.svg?style=flat)](https://travis-ci.org/Gürhan Yerlikaya/ScrollableStackView)-->
+<!--[![CI Status](http://img.shields.io/travis/Gürhan Yerlikaya/ScrollableStackView.svg?style=flat)](https://travis-ci.org/Gürhan Yerlikaya/ScrollableStackView)-->
 
 [![Version](https://img.shields.io/cocoapods/v/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
 [![License](https://img.shields.io/cocoapods/l/ScrollableStackView.svg?style=flat)](http://cocoapods.org/pods/ScrollableStackView)
@@ -100,8 +100,8 @@ from the Example directory first.
 
 If you see a way to improve the project :
 
-- If you **need help**, use [Stack Overflow](http://stackoverflow.com).
-- If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com).
+If you **need help**, use [Stack Overflow](https://stackoverflow.com/questions/tagged/scrollablestackview). (Tag `scrollablestackview`)
+- If you'd like to **ask a general question**, use [Stack Overflow](https://stackoverflow.com/questions/tagged/scrollablestackview).
 - If you **found a bug**, _and can provide steps to reliably reproduce it_, open an [issue][].
 - If you **have a feature request**, open an [issue][].
 - If you **want to contribute**, submit a [pull request]. It's better to begin with an [issue][] rather than a [pull request], though, because we might disagree whether the proposed change is an actual improvement. :wink:
@@ -123,7 +123,7 @@ Thanks! :v:
 
 ## Author
 
-Gürhan Yerlikaya, gurhanyerlikaya@gmail.com
+Gürhan Yerlikaya, gurhanyerlikaya@gmail.com
 
 ## License
 
