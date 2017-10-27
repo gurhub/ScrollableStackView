@@ -34,7 +34,13 @@
                             <constraint firstItem="ih8-ob-mXf" firstAttribute="trailing" secondItem="exB-Wu-Cts" secondAttribute="trailing" id="yU7-ar-Mds"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Jmg-s5-avS"/>
+                    <navigationItem key="navigationItem" id="Jmg-s5-avS">
+                        <barButtonItem key="rightBarButtonItem" title="View11" id="9FN-YL-Qr8">
+                            <connections>
+                                <action selector="jumpToViewAction:" destination="cHT-b1-igH" id="mgM-vF-7Bn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="scrollable" destination="ih8-ob-mXf" id="PNE-G7-ZjA"/>

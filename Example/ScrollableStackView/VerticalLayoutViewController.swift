@@ -29,11 +29,9 @@ class VerticalLayoutViewController: UIViewController {
         
         label.sizeToFit()
         scrollable.stackView.addArrangedSubview(label)
-        
-        self.perform(#selector(jumpToView), with: nil, afterDelay: 3.0)
     }
-    
-    func jumpToView() {
-        scrollable.scrollToItem(index: 11)
-    }
+	
+	@IBAction func jumpToViewAction(_ sender: Any) {
+		scrollable.scrollToItem(index: 11)
+	}
 }
