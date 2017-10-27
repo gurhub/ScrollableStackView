@@ -32,7 +32,7 @@ class VerticalLayoutViewController: UIViewController {
         
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 45))
         label.numberOfLines = 0
-        label.text = "Build with Xcode 8 and the latest SDKs. Xcode 8 includes Swift 3 and the latest SDKs for all Apple platforms. If your app is written in Swift, you can submit your apps to the App Store written in either Swift 3.0 or 2.3. We strongly encourage you to migrate your code to Swift 3. However, if you need to first update your code to Swift 2.3, you can run the Xcode 8 migrator later to move from 2.3 to 3.0. Before finalizing your app for release to the general public, get valuable feedback with beta testing to make sure it’s ready for your customers. TestFlight makes it easy to invite users to beta test your apps directly on their iPhone, iPad, Apple Watch, and Apple TV."
+        label.text = "Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do."
         
         label.sizeToFit()
         scrollable.stackView.addArrangedSubview(label)
