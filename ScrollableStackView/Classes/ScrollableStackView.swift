@@ -71,34 +71,6 @@ public class ScrollableStackView: UIView {
         }
     }
     
-    func addItemToStack() {
-        let random = CGFloat(arc4random_uniform(131) + 30) // between 30-130
-        let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: random, height: random))
-        rectangle.backgroundColor = UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1.0)
-        rectangle.heightAnchor.constraint(equalToConstant: random).isActive = true
-        
-        UIView.animate(withDuration: 0.25, animations: {
-            self.stackView.addArrangedSubview(rectangle)
-        }) { (isDone) in
-            if(isDone) {
-                self.scrollView.scrollToBottom(true)
-            }
-        }
-    }
-    
-    func removeItemFromStack() {
-        UIView.animate(withDuration: 0.25, animations: {
-            if let last = self.stackView.arrangedSubviews.last {
-                self.stackView.removeArrangedSubview(last)
-            }
-        }) { (isDone) in
-            if(isDone) {
-                self.scrollView.scrollToBottom(true)
-            }
-        }
-    }
-    
-    // Auto Layout
     override public func updateConstraints() {
         super.updateConstraints()
         
