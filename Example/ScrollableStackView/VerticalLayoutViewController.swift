@@ -19,7 +19,7 @@ class VerticalLayoutViewController: UIViewController {
         
         for _ in 1 ..< 23 {
             let min:UInt32 = 30
-            let max:UInt32 = 400
+            let max:UInt32 = UInt32(view.bounds.width - 10)
             let random = CGFloat(arc4random_uniform(max - min) + min) // between 30-130
             let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: random, height: random))
             rectangle.backgroundColor = UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1.0)
@@ -28,7 +28,7 @@ class VerticalLayoutViewController: UIViewController {
             scrollable.stackView.addArrangedSubview(rectangle)
         }
         
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 350, height: 45))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 45))
         label.numberOfLines = 0
         label.text = "Build with Xcode 8 and the latest SDKs. Xcode 8 includes Swift 3 and the latest SDKs for all Apple platforms. If your app is written in Swift, you can submit your apps to the App Store written in either Swift 3.0 or 2.3. We strongly encourage you to migrate your code to Swift 3. However, if you need to first update your code to Swift 2.3, you can run the Xcode 8 migrator later to move from 2.3 to 3.0. Before finalizing your app for release to the general public, get valuable feedback with beta testing to make sure it’s ready for your customers. TestFlight makes it easy to invite users to beta test your apps directly on their iPhone, iPad, Apple Watch, and Apple TV."
         
