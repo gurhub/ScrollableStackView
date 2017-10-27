@@ -5,16 +5,18 @@ import ScrollableStackView
 class VerticalLayoutViewController: UIViewController {
 
     var didSetupConstraints = false
-    var scrollable: ScrollableStackView!
-    
+
+	lazy var scrollable: ScrollableStackView = {
+		let instance = ScrollableStackView(frame: CGRect.zero)
+		instance.stackView.distribution = .fillProportionally
+		instance.stackView.alignment = .center
+		instance.scrollView.layoutMargins = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+		return instance
+	}()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollable = ScrollableStackView(frame: view.frame)
-        scrollable.stackView.distribution = .fillProportionally
-        scrollable.stackView.alignment = .center
-        scrollable.stackView.axis = .vertical
-        scrollable.scrollView.layoutMargins = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
         view.addSubview(scrollable)
         
         for _ in 1 ..< 23 {
@@ -45,16 +47,13 @@ class VerticalLayoutViewController: UIViewController {
     }
     
     override func updateViewConstraints() {
-        if (!didSetupConstraints) {
-            
-            let views:[String: AnyObject] = ["scrollableStackView": scrollable]
-            
-            view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[scrollableStackView]|", options: .alignAllCenterX, metrics: nil, views: views))
-            view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[scrollableStackView]|", options: .alignAllCenterX, metrics: nil, views: views))
-            
+		super.updateViewConstraints()
+        if !didSetupConstraints {
+			scrollable.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+			scrollable.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+			scrollable.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+			scrollable.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
             didSetupConstraints = true
         }
-        
-        super.updateViewConstraints()
     }
 }

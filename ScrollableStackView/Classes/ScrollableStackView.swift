@@ -107,19 +107,20 @@ import UIKit
     override public func updateConstraints() {
         super.updateConstraints()
         
-        if (!didSetupConstraints) {
-            addConstraint(NSLayoutConstraint(item: scrollView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 0))
-            addConstraint(NSLayoutConstraint(item: scrollView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: 0))
-            
-            addConstraint(NSLayoutConstraint(item: scrollView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0))
-            addConstraint(NSLayoutConstraint(item: scrollView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0))
-            
-            addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[stackView]-|", options: [], metrics: nil, views: ["stackView": stackView]))
-            
-            let margins = scrollView.layoutMarginsGuide
-            stackView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
-            stackView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-            
+        if !didSetupConstraints {
+			scrollView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+			scrollView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+			scrollView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+			scrollView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+
+			stackView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+			stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+			stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+			stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+			
+			// Set the width of the stack view to the width of the scroll view for vertical scrolling
+			stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+			
             didSetupConstraints = true
         }
     }
