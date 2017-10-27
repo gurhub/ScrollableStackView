@@ -1,11 +1,4 @@
-//
-//  VerticalLayoutViewController.swift
-//  ScrollableStackView
-//
-//  Created by G on 23/12/2016.
-//  Copyright © 2016 CocoaPods. All rights reserved.
-//
-
+// MIT license. Copyright (c) 2017 Gürhan Yerlikaya. All rights reserved.
 import UIKit
 import ScrollableStackView
 

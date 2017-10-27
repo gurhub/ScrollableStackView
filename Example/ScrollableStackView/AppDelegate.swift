@@ -1,11 +1,4 @@
-//
-//  AppDelegate.swift
-//  ScrollableStackView
-//
-//  Created by Gürhan Yerlikaya on 12/15/2016.
-//  Copyright (c) 2016 Gürhan Yerlikaya. All rights reserved.
-//
-
+// MIT license. Copyright (c) 2017 Gürhan Yerlikaya. All rights reserved.
 import UIKit
 
 @UIApplicationMain
