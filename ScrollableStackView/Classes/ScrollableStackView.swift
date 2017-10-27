@@ -7,11 +7,7 @@ import UIKit
     fileprivate var didSetupConstraints = false
     @objc @IBInspectable open var spacing: CGFloat = 8
     @objc open var durationForAnimations:TimeInterval = 1.45
-    
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+	
 	public lazy var scrollView: UIScrollView = {
 		let instance = UIScrollView(frame: CGRect.zero)
 		instance.translatesAutoresizingMaskIntoConstraints = false

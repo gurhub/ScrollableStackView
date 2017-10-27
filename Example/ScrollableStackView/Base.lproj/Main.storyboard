@@ -20,10 +20,25 @@
                     <view key="view" contentMode="scaleToFill" id="exB-Wu-Cts">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ih8-ob-mXf" customClass="ScrollableStackView" customModule="ScrollableStackView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ih8-ob-mXf" firstAttribute="leading" secondItem="exB-Wu-Cts" secondAttribute="leading" id="GFE-bd-UgO"/>
+                            <constraint firstItem="ih8-ob-mXf" firstAttribute="bottom" secondItem="exB-Wu-Cts" secondAttribute="bottom" id="Mr0-eY-hvc"/>
+                            <constraint firstItem="ih8-ob-mXf" firstAttribute="top" secondItem="exB-Wu-Cts" secondAttribute="top" id="UVh-n8-Td8"/>
+                            <constraint firstItem="ih8-ob-mXf" firstAttribute="trailing" secondItem="exB-Wu-Cts" secondAttribute="trailing" id="yU7-ar-Mds"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jmg-s5-avS"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="scrollable" destination="ih8-ob-mXf" id="PNE-G7-ZjA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2W-aS-xJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
