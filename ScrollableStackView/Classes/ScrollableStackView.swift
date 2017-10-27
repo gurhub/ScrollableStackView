@@ -5,8 +5,6 @@ import UIKit
 @objc public class ScrollableStackView: UIView {
     
     fileprivate var didSetupConstraints = false
-    public private(set) var scrollView: UIScrollView!
-    @objc open var stackView: UIStackView!
     @objc @IBInspectable open var spacing: CGFloat = 8
     @objc open var durationForAnimations:TimeInterval = 1.45
     
@@ -14,23 +12,21 @@ import UIKit
         fatalError("init(coder:) has not been implemented")
     }
     
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-    
-        // ScrollView
-        scrollView = UIScrollView(frame: self.frame)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.layoutMargins = .zero
-        self.addSubview(scrollView)
-        
-        // StackView
-        stackView = UIStackView(frame: scrollView.frame)
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = spacing
-        stackView.distribution = .equalSpacing
-        scrollView.addSubview(stackView)
-    }
+	public lazy var scrollView: UIScrollView = {
+		let instance = UIScrollView(frame: CGRect.zero)
+		instance.translatesAutoresizingMaskIntoConstraints = false
+		instance.layoutMargins = .zero
+		return instance
+	}()
+
+	public lazy var stackView: UIStackView = {
+		let instance = UIStackView(frame: CGRect.zero)
+		instance.translatesAutoresizingMaskIntoConstraints = false
+		instance.axis = .vertical
+		instance.spacing = self.spacing
+		instance.distribution = .equalSpacing
+		return instance
+	}()
 
     //MARK: View life cycle
     override public func didMoveToSuperview() {
@@ -41,10 +37,13 @@ import UIKit
     
     //MARK: UI
     func setupUI() {
-        self.translatesAutoresizingMaskIntoConstraints = false
+        translatesAutoresizingMaskIntoConstraints = false
         clipsToBounds = true
-        
-        self.setNeedsUpdateConstraints() // Bootstrap auto layout
+
+		addSubview(scrollView)
+		scrollView.addSubview(stackView)
+
+        setNeedsUpdateConstraints() // Bootstrap auto layout
     }
     
     // Scrolls to item at index
