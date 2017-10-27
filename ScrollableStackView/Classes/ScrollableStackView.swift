@@ -2,11 +2,11 @@
 import UIKit
 
 @IBDesignable
-@objc public class ScrollableStackView: UIView {
+public class ScrollableStackView: UIView {
     
     fileprivate var didSetupConstraints = false
-    @objc @IBInspectable open var spacing: CGFloat = 8
-    @objc open var durationForAnimations:TimeInterval = 1.45
+    @IBInspectable open var spacing: CGFloat = 8
+    open var durationForAnimations:TimeInterval = 1.45
 	
 	public lazy var scrollView: UIScrollView = {
 		let instance = UIScrollView(frame: CGRect.zero)
@@ -43,7 +43,7 @@ import UIKit
     }
     
     // Scrolls to item at index
-    @objc public func scrollToItem(index: Int) {
+    public func scrollToItem(index: Int) {
         if stackView.arrangedSubviews.count > 0 {
             let view = stackView.arrangedSubviews[index]
             
@@ -54,7 +54,7 @@ import UIKit
     }
     
     // Used to scroll till the end of scrollview
-    @objc public func scrollToBottom() {
+    public func scrollToBottom() {
         if stackView.arrangedSubviews.count > 0 {
             UIView.animate(withDuration: durationForAnimations, animations: {
                 self.scrollView.scrollToBottom(true)
@@ -63,7 +63,7 @@ import UIKit
     }
     
     // Scrolls to top of scrollable area
-    @objc public func scrollToTop() {
+    public func scrollToTop() {
         if stackView.arrangedSubviews.count > 0 {
             UIView.animate(withDuration: durationForAnimations, animations: {
                 self.scrollView.setContentOffset(CGPoint(x: 0, y:0), animated: true)
