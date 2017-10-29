@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'ScrollableStackView'
-s.version          = '1.0.3'
+s.version          = '1.0.4'
 s.summary          = 'Scrollable UIStackView. Scroll your stack view with a smile up on your face. Written in Swift 3. Used Apple s pure auto layout.'
 s.description      = <<-DESC
 
@@ -10,7 +10,7 @@ DESC
 
 s.homepage         = 'https://github.com/gurhub/ScrollableStackView'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
-s.author           = { 'Gürhan Yerlikaya' => 'gurhanyerlikaya@gmail.com' }
+s.author           = { 'Gürhan Yerlikaya' => 'gurhanyerlikaya@gmail.com' }
 s.source           = { :git => 'https://github.com/gurhub/ScrollableStackView.git', :tag => s.version.to_s }
 s.ios.deployment_target = '10.0'
 s.source_files = 'ScrollableStackView/Classes/**/*'
