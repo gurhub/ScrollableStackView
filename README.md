@@ -128,7 +128,7 @@ Thanks! :v:
 
 ## Author
 
-Gürhan Yerlikaya, gurhanyerlikaya@gmail.com
+Muhammed Gurhan Yerlikaya, gurhanyerlikaya@gmail.com
 
 ## License
 
