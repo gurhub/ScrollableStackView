@@ -59,6 +59,11 @@ let rectangle = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 55))
 rectangle.backgroundColor = UIColor.blue
 scrollable.stackView.addArrangedSubview(rectangle)
 // ...
+
+// you can set margins directly on the stackview
+scrollable.stackView.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+scrollable.stackView.isLayoutMarginsRelativeArrangement = true
+
 ```
 
 ### Sample Code (Objective-C)
